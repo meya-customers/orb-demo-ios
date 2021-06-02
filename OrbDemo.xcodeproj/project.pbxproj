@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F38D3B22665435700CF7CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B12665435700CF7CA3 /* AppDelegate.swift */; };
+		9F38D3B42665435700CF7CA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */; };
+		9F38D3B62665435700CF7CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B52665435700CF7CA3 /* ViewController.swift */; };
+		9F38D3B92665435700CF7CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3B72665435700CF7CA3 /* Main.storyboard */; };
+		9F38D3BB2665436600CF7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BA2665436600CF7CA3 /* Assets.xcassets */; };
+		9F38D3BE2665436600CF7CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */; };
+		9F38D4432665E22500CF7CA3 /* OrbInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D4422665E22500CF7CA3 /* OrbInit.swift */; };
+		BF7C8AC5CE8BF474E87A59C3 /* Pods_OrbDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39B3405693D0DA4128D07F15 /* Pods-OrbDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbDemo.release.xcconfig"; path = "Target Support Files/Pods-OrbDemo/Pods-OrbDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8047AA74170EF8611587D11D /* Pods-OrbDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbDemo.debug.xcconfig"; path = "Target Support Files/Pods-OrbDemo/Pods-OrbDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrbDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38D3AE2665435700CF7CA3 /* OrbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38D3B12665435700CF7CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F38D3B52665435700CF7CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F38D3B82665435700CF7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F38D3BA2665436600CF7CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F38D3BD2665436600CF7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F38D3BF2665436600CF7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F38D4422665E22500CF7CA3 /* OrbInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbInit.swift; sourceTree = "<group>"; };
+		9F38D46C2666C3BB00CF7CA3 /* OrbDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrbDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F38D3AB2665435700CF7CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7C8AC5CE8BF474E87A59C3 /* Pods_OrbDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DD5BDD67F585C2E933A51F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8047AA74170EF8611587D11D /* Pods-OrbDemo.debug.xcconfig */,
+				39B3405693D0DA4128D07F15 /* Pods-OrbDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F38D3A52665435700CF7CA3 = {
+			isa = PBXGroup;
+			children = (
+				9F38D3B02665435700CF7CA3 /* OrbDemo */,
+				9F38D3AF2665435700CF7CA3 /* Products */,
+				7DD5BDD67F585C2E933A51F4 /* Pods */,
+				CA9C7922647E58EE48D1F947 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F38D3AF2665435700CF7CA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F38D3AE2665435700CF7CA3 /* OrbDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F38D3B02665435700CF7CA3 /* OrbDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9F38D3B12665435700CF7CA3 /* AppDelegate.swift */,
+				9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */,
+				9F38D3B52665435700CF7CA3 /* ViewController.swift */,
+				9F38D3B72665435700CF7CA3 /* Main.storyboard */,
+				9F38D3BA2665436600CF7CA3 /* Assets.xcassets */,
+				9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */,
+				9F38D3BF2665436600CF7CA3 /* Info.plist */,
+				9F38D4422665E22500CF7CA3 /* OrbInit.swift */,
+				9F38D46C2666C3BB00CF7CA3 /* OrbDemo-Bridging-Header.h */,
+			);
+			path = OrbDemo;
+			sourceTree = "<group>";
+		};
+		CA9C7922647E58EE48D1F947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F38D3AD2665435700CF7CA3 /* OrbDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F38D3C22665436600CF7CA3 /* Build configuration list for PBXNativeTarget "OrbDemo" */;
+			buildPhases = (
+				2FF012A8451401FB61FD4616 /* [CP] Check Pods Manifest.lock */,
+				9DD451672B137A6C514FEBE5 /* [CP-User] Run Flutter Build orb_sdk Script */,
+				9F38D3AA2665435700CF7CA3 /* Sources */,
+				9F38D3AB2665435700CF7CA3 /* Frameworks */,
+				9F38D3AC2665435700CF7CA3 /* Resources */,
+				3E38C890A42C2599E71CC51F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrbDemo;
+			productName = OrbDemo;
+			productReference = 9F38D3AE2665435700CF7CA3 /* OrbDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F38D3A62665435700CF7CA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9F38D3AD2665435700CF7CA3 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 9F38D3A92665435700CF7CA3 /* Build configuration list for PBXProject "OrbDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F38D3A52665435700CF7CA3;
+			productRefGroup = 9F38D3AF2665435700CF7CA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F38D3AD2665435700CF7CA3 /* OrbDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F38D3AC2665435700CF7CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38D3BE2665436600CF7CA3 /* LaunchScreen.storyboard in Resources */,
+				9F38D3BB2665436600CF7CA3 /* Assets.xcassets in Resources */,
+				9F38D3B92665435700CF7CA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FF012A8451401FB61FD4616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrbDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E38C890A42C2599E71CC51F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrbDemo/Pods-OrbDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrbDemo/Pods-OrbDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrbDemo/Pods-OrbDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD451672B137A6C514FEBE5 /* [CP-User] Run Flutter Build orb_sdk Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build orb_sdk Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../v2/orb/mobile/orb_sdk/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F38D3AA2665435700CF7CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38D3B62665435700CF7CA3 /* ViewController.swift in Sources */,
+				9F38D3B22665435700CF7CA3 /* AppDelegate.swift in Sources */,
+				9F38D4432665E22500CF7CA3 /* OrbInit.swift in Sources */,
+				9F38D3B42665435700CF7CA3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F38D3B72665435700CF7CA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F38D3B82665435700CF7CA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F38D3BD2665436600CF7CA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F38D3C02665436600CF7CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F38D3C12665436600CF7CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F38D3C32665436600CF7CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8047AA74170EF8611587D11D /* Pods-OrbDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrbDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.meya.OrbDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OrbDemo/OrbDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F38D3C42665436600CF7CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B3405693D0DA4128D07F15 /* Pods-OrbDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrbDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.meya.OrbDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OrbDemo/OrbDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F38D3A92665435700CF7CA3 /* Build configuration list for PBXProject "OrbDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38D3C02665436600CF7CA3 /* Debug */,
+				9F38D3C12665436600CF7CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F38D3C22665436600CF7CA3 /* Build configuration list for PBXNativeTarget "OrbDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38D3C32665436600CF7CA3 /* Debug */,
+				9F38D3C42665436600CF7CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F38D3A62665435700CF7CA3 /* Project object */;
+}
