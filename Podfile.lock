@@ -63,16 +63,16 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - file_picker (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/file_picker/ios`)
-  - Flutter (from `../v2/orb/mobile/orb_sdk/.ios/Flutter/engine`)
-  - flutter_secure_storage (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios`)
-  - FlutterPluginRegistrant (from `../v2/orb/mobile/orb_sdk/.ios/Flutter/FlutterPluginRegistrant`)
-  - image_picker (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/image_picker/ios`)
-  - orb (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/orb/ios`)
-  - orb_sdk (from `../v2/orb/mobile/orb_sdk/.ios/Flutter`)
-  - package_info_plus (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios`)
-  - path_provider (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/path_provider/ios`)
-  - url_launcher (from `../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios`)
+  - file_picker (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `../orb-sdk/orb_sdk/.ios/Flutter/engine`)
+  - flutter_secure_storage (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios`)
+  - FlutterPluginRegistrant (from `../orb-sdk/orb_sdk/.ios/Flutter/FlutterPluginRegistrant`)
+  - image_picker (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/image_picker/ios`)
+  - orb (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/orb/ios`)
+  - orb_sdk (from `../orb-sdk/orb_sdk/.ios/Flutter`)
+  - package_info_plus (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios`)
+  - path_provider (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/path_provider/ios`)
+  - url_launcher (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios`)
 
 SPEC REPOS:
   trunk:
@@ -83,25 +83,25 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   file_picker:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/file_picker/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/file_picker/ios"
   Flutter:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/Flutter/engine"
+    :path: "../orb-sdk/orb_sdk/.ios/Flutter/engine"
   flutter_secure_storage:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios"
   FlutterPluginRegistrant:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/Flutter/FlutterPluginRegistrant"
+    :path: "../orb-sdk/orb_sdk/.ios/Flutter/FlutterPluginRegistrant"
   image_picker:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/image_picker/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/image_picker/ios"
   orb:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/orb/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/orb/ios"
   orb_sdk:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/Flutter"
+    :path: "../orb-sdk/orb_sdk/.ios/Flutter"
   package_info_plus:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios"
   path_provider:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/path_provider/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/path_provider/ios"
   url_launcher:
-    :path: "../v2/orb/mobile/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios"
+    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
   DKImagePickerController: b5eb7f7a388e4643264105d648d01f727110fc3d
@@ -119,6 +119,6 @@ SPEC CHECKSUMS:
   SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
 
-PODFILE CHECKSUM: ea06d48fdf92f87d61b9f56213dd234bc48e8061
+PODFILE CHECKSUM: b6093c76c7a1ec8aedb39d6c7b0357f90fa7151c
 
 COCOAPODS: 1.10.1

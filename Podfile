@@ -1,4 +1,4 @@
-flutter_application_path = '../v2/orb/mobile/orb_sdk'
+flutter_application_path = '../orb-sdk/orb_sdk'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 platform :ios, '9.0'

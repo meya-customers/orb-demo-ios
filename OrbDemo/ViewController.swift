@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         let platformVersion = "iOS " + UIDevice.current.systemVersion
         orb.connect(
             options: OrbConnectionOptions(
-                gridUrl: "https://grid-rvn-dev.meya.ai",
-                appId: "app-edf4be8b0f984a8db8823d8074beeb83",
+                gridUrl: "https://grid.meya.ai",
+                appId: "app-73c6d31d4f544a72941e21fb518b5737",
                 integrationId: "integration.orb",
                 pageContext: [
                     "platform_version": platformVersion,
