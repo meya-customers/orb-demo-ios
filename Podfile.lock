@@ -49,7 +49,7 @@ PODS:
     - Flutter
   - orb (0.0.1):
     - Flutter
-  - orb_sdk (0.0.1):
+  - orb_module (0.0.1):
     - Flutter
   - package_info_plus (0.4.5):
     - Flutter
@@ -63,16 +63,16 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - file_picker (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/file_picker/ios`)
-  - Flutter (from `../orb-sdk/orb_sdk/.ios/Flutter/engine`)
-  - flutter_secure_storage (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios`)
-  - FlutterPluginRegistrant (from `../orb-sdk/orb_sdk/.ios/Flutter/FlutterPluginRegistrant`)
-  - image_picker (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/image_picker/ios`)
-  - orb (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/orb/ios`)
-  - orb_sdk (from `../orb-sdk/orb_sdk/.ios/Flutter`)
-  - package_info_plus (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios`)
-  - path_provider (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/path_provider/ios`)
-  - url_launcher (from `../orb-sdk/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios`)
+  - file_picker (from `../orb-sdk/module/.ios/.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `../orb-sdk/module/.ios/Flutter/engine`)
+  - flutter_secure_storage (from `../orb-sdk/module/.ios/.symlinks/plugins/flutter_secure_storage/ios`)
+  - FlutterPluginRegistrant (from `../orb-sdk/module/.ios/Flutter/FlutterPluginRegistrant`)
+  - image_picker (from `../orb-sdk/module/.ios/.symlinks/plugins/image_picker/ios`)
+  - orb (from `../orb-sdk/module/.ios/.symlinks/plugins/orb/ios`)
+  - orb_module (from `../orb-sdk/module/.ios/Flutter`)
+  - package_info_plus (from `../orb-sdk/module/.ios/.symlinks/plugins/package_info_plus/ios`)
+  - path_provider (from `../orb-sdk/module/.ios/.symlinks/plugins/path_provider/ios`)
+  - url_launcher (from `../orb-sdk/module/.ios/.symlinks/plugins/url_launcher/ios`)
 
 SPEC REPOS:
   trunk:
@@ -83,25 +83,25 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   file_picker:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/file_picker/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/file_picker/ios"
   Flutter:
-    :path: "../orb-sdk/orb_sdk/.ios/Flutter/engine"
+    :path: "../orb-sdk/module/.ios/Flutter/engine"
   flutter_secure_storage:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/flutter_secure_storage/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/flutter_secure_storage/ios"
   FlutterPluginRegistrant:
-    :path: "../orb-sdk/orb_sdk/.ios/Flutter/FlutterPluginRegistrant"
+    :path: "../orb-sdk/module/.ios/Flutter/FlutterPluginRegistrant"
   image_picker:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/image_picker/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/image_picker/ios"
   orb:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/orb/ios"
-  orb_sdk:
-    :path: "../orb-sdk/orb_sdk/.ios/Flutter"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/orb/ios"
+  orb_module:
+    :path: "../orb-sdk/module/.ios/Flutter"
   package_info_plus:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/package_info_plus/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/package_info_plus/ios"
   path_provider:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/path_provider/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/path_provider/ios"
   url_launcher:
-    :path: "../orb-sdk/orb_sdk/.ios/.symlinks/plugins/url_launcher/ios"
+    :path: "../orb-sdk/module/.ios/.symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
   DKImagePickerController: b5eb7f7a388e4643264105d648d01f727110fc3d
@@ -112,13 +112,13 @@ SPEC CHECKSUMS:
   FlutterPluginRegistrant: 83220adc5ccbb53c84543480164b36866e5ab21e
   image_picker: 50e7c7ff960e5f58faa4d1f4af84a771c671bc4a
   orb: 3fb6306493f87e09a00afa6239d4d318808908f9
-  orb_sdk: 2318bf8e015e27d642315530d13a9b41c58a498b
+  orb_module: 3e035df4b2ad8c86be7ba69c0d86563e2a83d6c4
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
   SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
 
-PODFILE CHECKSUM: b6093c76c7a1ec8aedb39d6c7b0357f90fa7151c
+PODFILE CHECKSUM: f2395ab7fb7704d4415eaff7a977287c4cd2f1bf
 
 COCOAPODS: 1.10.1

@@ -104,7 +104,7 @@
 			buildConfigurationList = 9F38D3C22665436600CF7CA3 /* Build configuration list for PBXNativeTarget "OrbDemo" */;
 			buildPhases = (
 				2FF012A8451401FB61FD4616 /* [CP] Check Pods Manifest.lock */,
-				9DD451672B137A6C514FEBE5 /* [CP-User] Run Flutter Build orb_sdk Script */,
+				98344823ED7BB6DB016A572D /* [CP-User] Run Flutter Build orb_module Script */,
 				9F38D3AA2665435700CF7CA3 /* Sources */,
 				9F38D3AB2665435700CF7CA3 /* Frameworks */,
 				9F38D3AC2665435700CF7CA3 /* Resources */,
@@ -205,15 +205,15 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrbDemo/Pods-OrbDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DD451672B137A6C514FEBE5 /* [CP-User] Run Flutter Build orb_sdk Script */ = {
+		98344823ED7BB6DB016A572D /* [CP-User] Run Flutter Build orb_module Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			name = "[CP-User] Run Flutter Build orb_sdk Script";
+			name = "[CP-User] Run Flutter Build orb_module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../orb-sdk/orb_sdk/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../orb-sdk/module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 

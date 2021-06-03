@@ -46,7 +46,7 @@ parent/
 Run the following commands:
 
 ```shell
-cd orb-sdk/orb_sdk/
+cd orb-sdk/module/
 flutter pub get
 cd ../../orb-demo-ios
 pod install
