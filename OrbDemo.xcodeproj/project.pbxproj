@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		9F38D3B22665435700CF7CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B12665435700CF7CA3 /* AppDelegate.swift */; };
 		9F38D3B42665435700CF7CA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */; };
-		9F38D3B62665435700CF7CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B52665435700CF7CA3 /* ViewController.swift */; };
+		9F38D3B62665435700CF7CA3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D3B52665435700CF7CA3 /* LaunchViewController.swift */; };
 		9F38D3B92665435700CF7CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3B72665435700CF7CA3 /* Main.storyboard */; };
 		9F38D3BB2665436600CF7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BA2665436600CF7CA3 /* Assets.xcassets */; };
 		9F38D3BE2665436600CF7CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */; };
 		9F38D4432665E22500CF7CA3 /* OrbInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D4422665E22500CF7CA3 /* OrbInit.swift */; };
+		9FFFA568266AB78F00B23075 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFA567266AB78F00B23075 /* ChatViewController.swift */; };
 		BF7C8AC5CE8BF474E87A59C3 /* Pods_OrbDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +25,14 @@
 		9F38D3AE2665435700CF7CA3 /* OrbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F38D3B12665435700CF7CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F38D3B52665435700CF7CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F38D3B52665435700CF7CA3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9F38D3B82665435700CF7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F38D3BA2665436600CF7CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F38D3BD2665436600CF7CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F38D3BF2665436600CF7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F38D4422665E22500CF7CA3 /* OrbInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbInit.swift; sourceTree = "<group>"; };
 		9F38D46C2666C3BB00CF7CA3 /* OrbDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrbDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FFFA567266AB78F00B23075 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 			children = (
 				9F38D3B12665435700CF7CA3 /* AppDelegate.swift */,
 				9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */,
-				9F38D3B52665435700CF7CA3 /* ViewController.swift */,
+				9F38D3B52665435700CF7CA3 /* LaunchViewController.swift */,
 				9F38D3B72665435700CF7CA3 /* Main.storyboard */,
+				9FFFA567266AB78F00B23075 /* ChatViewController.swift */,
 				9F38D3BA2665436600CF7CA3 /* Assets.xcassets */,
 				9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */,
 				9F38D3BF2665436600CF7CA3 /* Info.plist */,
@@ -222,9 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F38D3B62665435700CF7CA3 /* ViewController.swift in Sources */,
+				9F38D3B62665435700CF7CA3 /* LaunchViewController.swift in Sources */,
 				9F38D3B22665435700CF7CA3 /* AppDelegate.swift in Sources */,
 				9F38D4432665E22500CF7CA3 /* OrbInit.swift in Sources */,
+				9FFFA568266AB78F00B23075 /* ChatViewController.swift in Sources */,
 				9F38D3B42665435700CF7CA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
