@@ -32,9 +32,21 @@ class LaunchViewController: UIViewController {
         if segue.destination is ChatViewController {
             let chatViewController = segue.destination as? ChatViewController
             let platformVersion = "iOS " + UIDevice.current.systemVersion
-            chatViewController?.gridUrl = gridUrlField.text!
-            chatViewController?.appId = appIdField.text!
-            chatViewController?.integrationId = integrationIdField.text!
+            if
+                let gridUrlField = gridUrlField,
+                let appIdField = appIdField,
+                let integrationIdField = integrationIdField
+            {
+                if
+                    let gridUrl = gridUrlField.text,
+                    let appId = appIdField.text,
+                    let integrationId = integrationIdField.text
+                {
+                    chatViewController?.gridUrl = gridUrl
+                    chatViewController?.appId = appId
+                    chatViewController?.integrationId = integrationId
+                }
+            }
             chatViewController?.pageContext = [
                 "platform_version": platformVersion,
                 "a": 1234,

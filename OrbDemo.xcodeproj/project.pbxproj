@@ -32,6 +32,7 @@
 		9F38D3BF2665436600CF7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F38D4422665E22500CF7CA3 /* OrbInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbInit.swift; sourceTree = "<group>"; };
 		9F38D46C2666C3BB00CF7CA3 /* OrbDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrbDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F62B51E2677F4A000699284 /* OrbDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrbDemo.entitlements; sourceTree = "<group>"; };
 		9FFFA567266AB78F00B23075 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +78,7 @@
 		9F38D3B02665435700CF7CA3 /* OrbDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F62B51E2677F4A000699284 /* OrbDemo.entitlements */,
 				9F38D3B12665435700CF7CA3 /* AppDelegate.swift */,
 				9F38D3B32665435700CF7CA3 /* SceneDelegate.swift */,
 				9F38D3B52665435700CF7CA3 /* LaunchViewController.swift */,
@@ -378,7 +380,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKWG9U39A5;
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,6 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

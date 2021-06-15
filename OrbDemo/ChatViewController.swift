@@ -18,16 +18,18 @@ class ChatViewController: UIViewController {
 
     func createOrbViewController() {
         let orb = (UIApplication.shared.delegate as! AppDelegate).orb
-        orb.connect(
-            options: OrbConnectionOptions(
-                gridUrl: gridUrl,
-                appId: appId,
-                integrationId: integrationId,
-                pageContext: pageContext
-            ),
-            result: { result in
-                print("Connect result: \(String(describing: result))")
-            })
+        orb.onReady {
+            orb.connect(
+                options: OrbConnectionOptions(
+                    gridUrl: self.gridUrl,
+                    appId: self.appId,
+                    integrationId: self.integrationId,
+                    pageContext: self.pageContext
+                ),
+                result: { result in
+                    print("Connect result: \(String(describing: result))")
+                })
+        }
         orb.onConnnected {
             print("Orb connected")
         }

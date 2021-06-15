@@ -81,7 +81,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="J3v-Bq-t9J" kind="show" id="H7U-p1-sqq"/>
+                                                    <segue destination="J3v-Bq-t9J" kind="show" identifier="launchOrbSegue" id="H7U-p1-sqq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mv-iL-4cI">
@@ -147,7 +147,7 @@
         <!--Meya Orb Demo-->
         <scene sceneID="bM7-pM-Se9">
             <objects>
-                <navigationController title="Meya Orb Demo" automaticallyAdjustsScrollViewInsets="NO" id="C6x-6H-CKX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" title="Meya Orb Demo" automaticallyAdjustsScrollViewInsets="NO" id="C6x-6H-CKX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CSv-k5-XMP">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
