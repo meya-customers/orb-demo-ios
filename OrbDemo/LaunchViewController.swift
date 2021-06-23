@@ -3,6 +3,7 @@ import Flutter
 import orb
 
 class LaunchViewController: UIViewController {
+    var orb: Orb?
     @IBOutlet weak var gridUrlField: UITextField!
     @IBOutlet weak var appIdField: UITextField!
     @IBOutlet weak var integrationIdField: UITextField!
@@ -60,11 +61,13 @@ class LaunchViewController: UIViewController {
     }
     
     @IBAction func launchOrbModal(_ sender: Any) {
-        let orb = (UIApplication.shared.delegate as! AppDelegate).orb
-        let platformVersion = "iOS " + UIDevice.current.systemVersion
-        
-        orb.connect(
-            options: OrbConnectionOptions(
+        orb = Orb()
+        if let orb = orb {
+            orb.initialize()
+            orb.deviceToken = (UIApplication.shared.delegate as! AppDelegate).deviceToken
+            print("Device token: \(String(describing: orb.deviceToken))")
+            let platformVersion = "iOS " + UIDevice.current.systemVersion
+            let connectionOptions = OrbConnectionOptions(
                 gridUrl: gridUrlField.text!,
                 appId: appIdField.text!,
                 integrationId: integrationIdField.text!,
@@ -77,14 +80,24 @@ class LaunchViewController: UIViewController {
                         "bool": true
                     ]
                 ] as [String: Any?]
-            ),
-            result: { result in
-                print("Connect result: \(String(describing: result))")
-            })
-        let orbViewController = orb.viewController()
-        orbViewController.modalPresentationStyle = .fullScreen
-        orbViewController.modalTransitionStyle = .crossDissolve
-        present(orbViewController, animated: true, completion: nil)
+            )
+            if !orb.ready {
+                orb.onReady { [unowned orb] in
+                    orb.connect(options: connectionOptions)
+                }
+            } else {
+                orb.connect(options: connectionOptions)
+            }
+            
+            let orbViewController = orb.viewController()
+            orbViewController.modalPresentationStyle = .fullScreen
+            orbViewController.modalTransitionStyle = .crossDissolve
+            orb.onClose {[unowned self] in
+                self.dismiss(animated: true, completion: nil)
+                self.orb = nil
+            }
+            present(orbViewController, animated: true, completion: nil)
+        }
     }
 }
 

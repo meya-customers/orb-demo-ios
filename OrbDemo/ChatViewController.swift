@@ -17,24 +17,30 @@ class ChatViewController: UIViewController {
     }
 
     func createOrbViewController() {
-        let orb = (UIApplication.shared.delegate as! AppDelegate).orb
-        orb.onReady {
-            orb.connect(
-                options: OrbConnectionOptions(
-                    gridUrl: self.gridUrl,
-                    appId: self.appId,
-                    integrationId: self.integrationId,
-                    pageContext: self.pageContext
-                ),
-                result: { result in
-                    print("Connect result: \(String(describing: result))")
-                })
+        let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+        let orb = appDelegate.orb
+        
+        let connectionOptions = OrbConnectionOptions(
+            gridUrl: self.gridUrl,
+            appId: self.appId,
+            integrationId: self.integrationId,
+            pageContext: self.pageContext
+        )
+        if !orb.ready {
+            orb.onReady { [unowned orb] in
+                orb.connect(options: connectionOptions)
+            }
+        } else {
+            orb.connect(options: connectionOptions)
         }
         orb.onConnnected {
             print("Orb connected")
         }
         orb.onDisconnected {
             print("Orb disconnected")
+        }
+        orb.onClose { [unowned self] in
+            self.navigationController?.popViewController(animated: true)
         }
         let orbViewController = orb.viewController()
         

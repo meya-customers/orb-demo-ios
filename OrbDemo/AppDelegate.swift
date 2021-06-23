@@ -5,6 +5,7 @@ import UserNotifications
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var orb = Orb()
+    var deviceToken: String?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         orb.initialize()
@@ -25,19 +26,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             completionHandler(.failed)
             return
         }
-        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
         
-        // Open the chat view when a push notification is received
-        if !(navigationController.topViewController is ChatViewController) {
-            let chatViewController = ChatViewController()
-            navigationController.pushViewController(chatViewController, animated: true)
-        }
+        // Uncomment this to open the chat view when a push notification is received
+//        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
+//        if !(navigationController.topViewController is ChatViewController) {
+//            let chatViewController = ChatViewController()
+//            navigationController.pushViewController(chatViewController, animated: true)
+//        }
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data)}
         let token = tokenParts.joined()
-        print("Device Token: \(token)")
+        self.deviceToken = token
+        orb.deviceToken = token
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
