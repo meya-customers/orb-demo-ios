@@ -92,8 +92,9 @@ class LaunchViewController: UIViewController {
             let orbViewController = orb.viewController()
             orbViewController.modalPresentationStyle = .fullScreen
             orbViewController.modalTransitionStyle = .crossDissolve
-            orb.onClose {[unowned self] in
-                self.dismiss(animated: true, completion: nil)
+            orb.onCloseUi {[unowned self, unowned orbViewController] in
+                orbViewController.dismiss(animated: true, completion: nil)
+                // Set to nil so that Orb get's deinitialized immediately
                 self.orb = nil
             }
             present(orbViewController, animated: true, completion: nil)

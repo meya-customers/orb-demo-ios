@@ -27,12 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        // Uncomment this to open the chat view when a push notification is received
-//        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
-//        if !(navigationController.topViewController is ChatViewController) {
-//            let chatViewController = ChatViewController()
-//            navigationController.pushViewController(chatViewController, animated: true)
-//        }
+        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
+        if !(navigationController.topViewController is ChatViewController) {
+            let chatViewController = ChatViewController()
+            navigationController.pushViewController(chatViewController, animated: true)
+        }
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

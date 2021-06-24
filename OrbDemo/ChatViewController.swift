@@ -3,28 +3,51 @@ import orb
 
 class ChatViewController: UIViewController {
     
-    var gridUrl: String = "https://grid.meya.ai"
-    var appId: String = "app-73c6d31d4f544a72941e21fb518b5737"
-    var integrationId: String = "integration.orb"
-    var pageContext: [String: Any?] = [:]
+    var gridUrl: String?
+    var appId: String?
+    var integrationId: String?
+    var pageContext: [String: Any?]? = [:]
     
     @IBOutlet weak var chatView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Orb"
-        createOrbViewController()
+        
+        if
+            let gridUrl = gridUrl,
+            let appId = appId,
+            let integrationId = integrationId,
+            let pageContext = pageContext
+        {
+            createOrbViewController(
+                gridUrl: gridUrl, appId: appId, integrationId: integrationId, pageContext: pageContext
+            )
+        } else {
+            let alert = UIAlertController(
+                title: "Could not load Orb",
+                message: "The Orb connection parameters were not initialized properly.",
+                preferredStyle: UIAlertController.Style.alert
+            )
+            alert.addAction(
+                UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) {[unowned self] alertAction in
+                    self.navigationController?.popViewController(animated: true)
+                }
+            )
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
-    func createOrbViewController() {
+    func createOrbViewController(gridUrl: String, appId: String, integrationId: String, pageContext: [String: Any?]) {
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
         let orb = appDelegate.orb
         
         let connectionOptions = OrbConnectionOptions(
-            gridUrl: self.gridUrl,
-            appId: self.appId,
-            integrationId: self.integrationId,
-            pageContext: self.pageContext
+            gridUrl: gridUrl,
+            appId: appId,
+            integrationId: integrationId,
+            pageContext: pageContext,
+            enableCloseButton: false
         )
         if !orb.ready {
             orb.onReady { [unowned orb] in
@@ -38,9 +61,6 @@ class ChatViewController: UIViewController {
         }
         orb.onDisconnected {
             print("Orb disconnected")
-        }
-        orb.onClose { [unowned self] in
-            self.navigationController?.popViewController(animated: true)
         }
         let orbViewController = orb.viewController()
         
