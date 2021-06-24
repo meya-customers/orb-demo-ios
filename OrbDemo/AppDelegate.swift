@@ -22,15 +22,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didReceiveRemoteNotification userInfo: [AnyHashable: Any],
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
     ) {
-        guard let _ = userInfo["aps"] as? [String: AnyObject] else {
+        // Meya notifications always contain the "meya_integration_id" key to identify which Orb Mobile integration
+        // in you app sent the notification.
+        if
+            let aps = userInfo["aps"] as? [String: AnyObject],
+            let meyaIntegrationId = userInfo["meya_integration_id"] as? String
+        {
+            // Handle Meya notifications
+            print(meyaIntegrationId)
+            print(aps)
+            // Uncomment the following to open the ChatViewController when a Meya notification arrives
+    //        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
+    //        if !(navigationController.topViewController is ChatViewController) {
+    //            let chatViewController = ChatViewController()
+    //            chatViewController.gridUrl = "https://grid.meya.ai"
+    //            chatViewController.appId = "YOUR MEYA APP ID"
+    //            chatViewController.integrationId = "integration.orb.mobile"
+    //            navigationController.pushViewController(chatViewController, animated: true)
+    //        }
+        } else {
             completionHandler(.failed)
             return
-        }
-        
-        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
-        if !(navigationController.topViewController is ChatViewController) {
-            let chatViewController = ChatViewController()
-            navigationController.pushViewController(chatViewController, animated: true)
         }
     }
     
