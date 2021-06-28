@@ -31,15 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Handle Meya notifications
             print(meyaIntegrationId)
             print(aps)
-            // Uncomment the following to open the ChatViewController when a Meya notification arrives
-    //        let navigationController = UIApplication.shared.windows.first!.rootViewController as! UINavigationController
-    //        if !(navigationController.topViewController is ChatViewController) {
-    //            let chatViewController = ChatViewController()
-    //            chatViewController.gridUrl = "https://grid.meya.ai"
-    //            chatViewController.appId = "YOUR MEYA APP ID"
-    //            chatViewController.integrationId = "integration.orb.mobile"
-    //            navigationController.pushViewController(chatViewController, animated: true)
-    //        }
+            if
+                let alert = aps["alert"],
+                let title = alert["title"],
+                let body = alert["body"]
+            {
+                sendNotification(title: title as! String, body: body as! String)
+            }
         } else {
             completionHandler(.failed)
             return
@@ -74,5 +72,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-}
+    
+    func sendNotification(title: String, body: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+        content.categoryIdentifier = "MEYA_ORB"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)
+        let request = UNNotificationRequest(
+            identifier: "MEYA_ORB",
+            content: content,
+            trigger: trigger
+        )
 
+        let center =  UNUserNotificationCenter.current()
+        center.add(request) { (error) in
+            if error != nil {
+                print("Notification error: \(String(describing: error))")
+            }
+        }
+    }
+}

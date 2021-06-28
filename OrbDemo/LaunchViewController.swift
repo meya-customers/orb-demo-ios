@@ -2,8 +2,9 @@ import UIKit
 import Flutter
 import orb
 
-class LaunchViewController: UIViewController {
+class LaunchViewController: UIViewController, UNUserNotificationCenterDelegate {
     var orb: Orb?
+    
     @IBOutlet weak var gridUrlField: UITextField!
     @IBOutlet weak var appIdField: UITextField!
     @IBOutlet weak var integrationIdField: UITextField!
@@ -26,10 +27,34 @@ class LaunchViewController: UIViewController {
         
         launchModalButton.layer.cornerRadius = 8
         launchModalButton.layer.masksToBounds = true
+        
+        UNUserNotificationCenter.current().delegate = self
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.badge, .sound, .alert])
+    }
+    
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        let userInfo = response.notification.request.content.userInfo
+        
+        // Handle Meya local notification action
+        if let _ = userInfo["meya_integration_id"] {
+            presentOrbFullscreen()
+        }
+        
+        completionHandler()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is ChatViewController {
             let chatViewController = segue.destination as? ChatViewController
             let platformVersion = "iOS " + UIDevice.current.systemVersion
@@ -61,6 +86,12 @@ class LaunchViewController: UIViewController {
     }
     
     @IBAction func launchOrbModal(_ sender: Any) {
+        presentOrbFullscreen()
+    }
+    
+    public func presentOrbFullscreen() {
+        guard orb == nil else { return }
+
         orb = Orb()
         if let orb = orb {
             orb.initialize()
