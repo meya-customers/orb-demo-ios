@@ -383,6 +383,7 @@
 				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKWG9U39A5;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,6 +407,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
