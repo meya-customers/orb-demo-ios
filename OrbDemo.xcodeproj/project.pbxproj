@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,62 @@
 		9F38D3BB2665436600CF7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BA2665436600CF7CA3 /* Assets.xcassets */; };
 		9F38D3BE2665436600CF7CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F38D3BC2665436600CF7CA3 /* LaunchScreen.storyboard */; };
 		9F38D4432665E22500CF7CA3 /* OrbInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38D4422665E22500CF7CA3 /* OrbInit.swift */; };
+		9F86AC952696667800A74B68 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC942696667800A74B68 /* App.xcframework */; };
+		9F86ACA2269666AA00A74B68 /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC96269666AA00A74B68 /* package_info_plus.xcframework */; };
+		9F86ACA3269666AA00A74B68 /* SwiftyGif.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC97269666AA00A74B68 /* SwiftyGif.xcframework */; };
+		9F86ACA4269666AA00A74B68 /* url_launcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC98269666AA00A74B68 /* url_launcher.xcframework */; };
+		9F86ACA5269666AA00A74B68 /* flutter_secure_storage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC99269666AA00A74B68 /* flutter_secure_storage.xcframework */; };
+		9F86ACA6269666AA00A74B68 /* orb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9A269666AA00A74B68 /* orb.xcframework */; };
+		9F86ACA7269666AA00A74B68 /* path_provider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9B269666AA00A74B68 /* path_provider.xcframework */; };
+		9F86ACA8269666AA00A74B68 /* DKImagePickerController.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9C269666AA00A74B68 /* DKImagePickerController.xcframework */; };
+		9F86ACA9269666AA00A74B68 /* file_picker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9D269666AA00A74B68 /* file_picker.xcframework */; };
+		9F86ACAA269666AA00A74B68 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9E269666AA00A74B68 /* SDWebImage.xcframework */; };
+		9F86ACAB269666AA00A74B68 /* image_picker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9F269666AA00A74B68 /* image_picker.xcframework */; };
+		9F86ACAC269666AA00A74B68 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86ACA0269666AA00A74B68 /* Flutter.xcframework */; };
+		9F86ACAD269666AA00A74B68 /* DKPhotoGallery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86ACA1269666AA00A74B68 /* DKPhotoGallery.xcframework */; };
+		9F86ACAF2696675800A74B68 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86ACAE2696675800A74B68 /* FlutterPluginRegistrant.xcframework */; };
+		9F86ACB1269668EB00A74B68 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC942696667800A74B68 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB2269668EB00A74B68 /* DKImagePickerController.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9C269666AA00A74B68 /* DKImagePickerController.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB3269668EB00A74B68 /* DKPhotoGallery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86ACA1269666AA00A74B68 /* DKPhotoGallery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB4269668EB00A74B68 /* file_picker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9D269666AA00A74B68 /* file_picker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB5269668EB00A74B68 /* flutter_secure_storage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC99269666AA00A74B68 /* flutter_secure_storage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB6269668EB00A74B68 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86ACA0269666AA00A74B68 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB7269668EB00A74B68 /* image_picker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9F269666AA00A74B68 /* image_picker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACB9269668EB00A74B68 /* orb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9A269666AA00A74B68 /* orb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACBA269668EB00A74B68 /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC96269666AA00A74B68 /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACBB269668EB00A74B68 /* path_provider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9B269666AA00A74B68 /* path_provider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACBC269668EB00A74B68 /* SDWebImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC9E269666AA00A74B68 /* SDWebImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACBD269668EB00A74B68 /* SwiftyGif.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC97269666AA00A74B68 /* SwiftyGif.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F86ACBE269668EB00A74B68 /* url_launcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86AC98269666AA00A74B68 /* url_launcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FFFA568266AB78F00B23075 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFA567266AB78F00B23075 /* ChatViewController.swift */; };
 		BF7C8AC5CE8BF474E87A59C3 /* Pods_OrbDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F86ACB0269668B500A74B68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F86ACB1269668EB00A74B68 /* App.xcframework in Embed Frameworks */,
+				9F86ACB2269668EB00A74B68 /* DKImagePickerController.xcframework in Embed Frameworks */,
+				9F86ACB3269668EB00A74B68 /* DKPhotoGallery.xcframework in Embed Frameworks */,
+				9F86ACB4269668EB00A74B68 /* file_picker.xcframework in Embed Frameworks */,
+				9F86ACB5269668EB00A74B68 /* flutter_secure_storage.xcframework in Embed Frameworks */,
+				9F86ACB6269668EB00A74B68 /* Flutter.xcframework in Embed Frameworks */,
+				9F86ACB7269668EB00A74B68 /* image_picker.xcframework in Embed Frameworks */,
+				9F86ACB9269668EB00A74B68 /* orb.xcframework in Embed Frameworks */,
+				9F86ACBA269668EB00A74B68 /* package_info_plus.xcframework in Embed Frameworks */,
+				9F86ACBB269668EB00A74B68 /* path_provider.xcframework in Embed Frameworks */,
+				9F86ACBC269668EB00A74B68 /* SDWebImage.xcframework in Embed Frameworks */,
+				9F86ACBD269668EB00A74B68 /* SwiftyGif.xcframework in Embed Frameworks */,
+				9F86ACBE269668EB00A74B68 /* url_launcher.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39B3405693D0DA4128D07F15 /* Pods-OrbDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbDemo.release.xcconfig"; path = "Target Support Files/Pods-OrbDemo/Pods-OrbDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -33,6 +86,20 @@
 		9F38D4422665E22500CF7CA3 /* OrbInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbInit.swift; sourceTree = "<group>"; };
 		9F38D46C2666C3BB00CF7CA3 /* OrbDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrbDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F62B51E2677F4A000699284 /* OrbDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrbDemo.entitlements; sourceTree = "<group>"; };
+		9F86AC942696667800A74B68 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sandbox/orb-frameworks/Release/App.xcframework"; sourceTree = "<group>"; };
+		9F86AC96269666AA00A74B68 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "../../sandbox/orb-frameworks/Release/package_info_plus.xcframework"; sourceTree = "<group>"; };
+		9F86AC97269666AA00A74B68 /* SwiftyGif.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyGif.xcframework; path = "../../sandbox/orb-frameworks/Release/SwiftyGif.xcframework"; sourceTree = "<group>"; };
+		9F86AC98269666AA00A74B68 /* url_launcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher.xcframework; path = "../../sandbox/orb-frameworks/Release/url_launcher.xcframework"; sourceTree = "<group>"; };
+		9F86AC99269666AA00A74B68 /* flutter_secure_storage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_secure_storage.xcframework; path = "../../sandbox/orb-frameworks/Release/flutter_secure_storage.xcframework"; sourceTree = "<group>"; };
+		9F86AC9A269666AA00A74B68 /* orb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = orb.xcframework; path = "../../sandbox/orb-frameworks/Release/orb.xcframework"; sourceTree = "<group>"; };
+		9F86AC9B269666AA00A74B68 /* path_provider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = path_provider.xcframework; path = "../../sandbox/orb-frameworks/Release/path_provider.xcframework"; sourceTree = "<group>"; };
+		9F86AC9C269666AA00A74B68 /* DKImagePickerController.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DKImagePickerController.xcframework; path = "../../sandbox/orb-frameworks/Release/DKImagePickerController.xcframework"; sourceTree = "<group>"; };
+		9F86AC9D269666AA00A74B68 /* file_picker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = file_picker.xcframework; path = "../../sandbox/orb-frameworks/Release/file_picker.xcframework"; sourceTree = "<group>"; };
+		9F86AC9E269666AA00A74B68 /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDWebImage.xcframework; path = "../../sandbox/orb-frameworks/Release/SDWebImage.xcframework"; sourceTree = "<group>"; };
+		9F86AC9F269666AA00A74B68 /* image_picker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = image_picker.xcframework; path = "../../sandbox/orb-frameworks/Release/image_picker.xcframework"; sourceTree = "<group>"; };
+		9F86ACA0269666AA00A74B68 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../sandbox/orb-frameworks/Release/Flutter.xcframework"; sourceTree = "<group>"; };
+		9F86ACA1269666AA00A74B68 /* DKPhotoGallery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DKPhotoGallery.xcframework; path = "../../sandbox/orb-frameworks/Release/DKPhotoGallery.xcframework"; sourceTree = "<group>"; };
+		9F86ACAE2696675800A74B68 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = "../../sandbox/orb-frameworks/Release/FlutterPluginRegistrant.xcframework"; sourceTree = "<group>"; };
 		9FFFA567266AB78F00B23075 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +108,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F86ACA6269666AA00A74B68 /* orb.xcframework in Frameworks */,
+				9F86ACA4269666AA00A74B68 /* url_launcher.xcframework in Frameworks */,
+				9F86ACA3269666AA00A74B68 /* SwiftyGif.xcframework in Frameworks */,
 				BF7C8AC5CE8BF474E87A59C3 /* Pods_OrbDemo.framework in Frameworks */,
+				9F86ACAA269666AA00A74B68 /* SDWebImage.xcframework in Frameworks */,
+				9F86ACA8269666AA00A74B68 /* DKImagePickerController.xcframework in Frameworks */,
+				9F86AC952696667800A74B68 /* App.xcframework in Frameworks */,
+				9F86ACA2269666AA00A74B68 /* package_info_plus.xcframework in Frameworks */,
+				9F86ACA9269666AA00A74B68 /* file_picker.xcframework in Frameworks */,
+				9F86ACA5269666AA00A74B68 /* flutter_secure_storage.xcframework in Frameworks */,
+				9F86ACA7269666AA00A74B68 /* path_provider.xcframework in Frameworks */,
+				9F86ACAC269666AA00A74B68 /* Flutter.xcframework in Frameworks */,
+				9F86ACAD269666AA00A74B68 /* DKPhotoGallery.xcframework in Frameworks */,
+				9F86ACAF2696675800A74B68 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				9F86ACAB269666AA00A74B68 /* image_picker.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +177,20 @@
 		CA9C7922647E58EE48D1F947 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F86AC942696667800A74B68 /* App.xcframework */,
+				9F86AC9C269666AA00A74B68 /* DKImagePickerController.xcframework */,
+				9F86ACA1269666AA00A74B68 /* DKPhotoGallery.xcframework */,
+				9F86AC9D269666AA00A74B68 /* file_picker.xcframework */,
+				9F86AC99269666AA00A74B68 /* flutter_secure_storage.xcframework */,
+				9F86ACA0269666AA00A74B68 /* Flutter.xcframework */,
+				9F86AC9F269666AA00A74B68 /* image_picker.xcframework */,
+				9F86ACAE2696675800A74B68 /* FlutterPluginRegistrant.xcframework */,
+				9F86AC9A269666AA00A74B68 /* orb.xcframework */,
+				9F86AC96269666AA00A74B68 /* package_info_plus.xcframework */,
+				9F86AC9B269666AA00A74B68 /* path_provider.xcframework */,
+				9F86AC9E269666AA00A74B68 /* SDWebImage.xcframework */,
+				9F86AC97269666AA00A74B68 /* SwiftyGif.xcframework */,
+				9F86AC98269666AA00A74B68 /* url_launcher.xcframework */,
 				8AB11B549B65626AB0D009DE /* Pods_OrbDemo.framework */,
 			);
 			name = Frameworks;
@@ -109,11 +204,11 @@
 			buildConfigurationList = 9F38D3C22665436600CF7CA3 /* Build configuration list for PBXNativeTarget "OrbDemo" */;
 			buildPhases = (
 				2FF012A8451401FB61FD4616 /* [CP] Check Pods Manifest.lock */,
-				98344823ED7BB6DB016A572D /* [CP-User] Run Flutter Build orb_module Script */,
 				9F38D3AA2665435700CF7CA3 /* Sources */,
 				9F38D3AB2665435700CF7CA3 /* Frameworks */,
 				9F38D3AC2665435700CF7CA3 /* Resources */,
-				3E38C890A42C2599E71CC51F /* [CP] Embed Pods Frameworks */,
+				9F86ACB0269668B500A74B68 /* Embed Frameworks */,
+				E6D532E3A1DDF1EB236496DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +288,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E38C890A42C2599E71CC51F /* [CP] Embed Pods Frameworks */ = {
+		E6D532E3A1DDF1EB236496DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,16 +304,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrbDemo/Pods-OrbDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		98344823ED7BB6DB016A572D /* [CP-User] Run Flutter Build orb_module Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build orb_module Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../orb-sdk/module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -383,6 +468,11 @@
 				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKWG9U39A5;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/roeland/git/sandbox/orb-frameworks/Release",
+				);
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,6 +496,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OrbDemo/OrbDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKWG9U39A5;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/roeland/git/sandbox/orb-frameworks/Release",
+				);
 				INFOPLIST_FILE = OrbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
