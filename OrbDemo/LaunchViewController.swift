@@ -112,11 +112,30 @@ class LaunchViewController: UIViewController, UNUserNotificationCenterDelegate {
                     ]
                 ] as [String: Any?]
             )
+            let config = OrbConfig(
+                theme: OrbTheme(
+                    brandColor: "#00d9d9"
+                ),
+                composer: OrbComposer(
+                    placeholderText: "Type your message",
+                    collapsePlaceholderText: "Message",
+                    fileButtonText: "File",
+                    fileSendText: "Send ",
+                    imageButtonText: "Photo",
+                    cameraButtonText: "Camera",
+                    galleryButtonText: "Gallery"
+                ),
+                splash: OrbSplash(
+                    readyText: "Orb is now ready"
+                )
+            )
             if !orb.ready {
                 orb.onReady { [unowned orb] in
+                    orb.configure(config: config)
                     orb.connect(options: connectionOptions)
                 }
             } else {
+                orb.configure(config: config)
                 orb.connect(options: connectionOptions)
             }
             
