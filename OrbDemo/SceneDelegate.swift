@@ -35,6 +35,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         self.window = window
+        let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+        appDelegate.window = window
         window.makeKeyAndVisible()
     }
 }
