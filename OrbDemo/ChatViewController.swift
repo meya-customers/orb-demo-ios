@@ -37,6 +37,15 @@ class ChatViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if self.isMovingFromParent {
+            let orb = (UIApplication.shared.delegate as! AppDelegate).orb
+            orb.disconnect()
+        }
+    }
 
     func createOrbViewController(gridUrl: String, appId: String, integrationId: String, pageContext: [String: Any?]) {
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
@@ -106,10 +115,5 @@ class ChatViewController: UIViewController {
                 views: views
             )
         )
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        let orb = (UIApplication.shared.delegate as! AppDelegate).orb
-        orb.disconnect()
     }
 }
