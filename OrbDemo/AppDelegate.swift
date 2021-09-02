@@ -4,6 +4,7 @@ import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
     lazy var orb = Orb()
     var deviceToken: String?
     
