@@ -1,7 +1,7 @@
 PODS:
-  - Flutter (2.2.300)
+  - Flutter (2.5.200)
   - Orb (2.7.0):
-    - Flutter (= 2.2.300)
+    - Flutter (= 2.5.200)
 
 DEPENDENCIES:
   - Orb (= 2.7.0)
@@ -12,8 +12,8 @@ SPEC REPOS:
     - Orb
 
 SPEC CHECKSUMS:
-  Flutter: adb081b54a4de713becaa7d1d22291e3766f406c
-  Orb: a2f1b4fc980ebf2e80cd20713b8a2fd0c1454d8d
+  Flutter: 862c8131abdbeb5c1b586c3246aab518cd6ccbb1
+  Orb: 368b609d47d1a7738a3360b3dce2523b0aebd440
 
 PODFILE CHECKSUM: 14f8f22694db3b06d0a6c9ab56b68c877b52a30d
 
