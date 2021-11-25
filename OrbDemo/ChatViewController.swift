@@ -73,6 +73,11 @@ class ChatViewController: UIViewController {
 //            ),
 //            splash: OrbSplash(
 //                readyText: "Orb is now ready"
+//            ),
+//            mediaUpload: OrbMediaUpload(
+//                all: nil,
+//                image: nil,
+//                file: nil
 //            )
 //        )
         if !orb.ready {
