@@ -1,20 +1,20 @@
 PODS:
-  - FlutterDebug (2.5.300)
-  - OrbDebug (2.7.5):
-    - FlutterDebug (= 2.5.300)
+  - Flutter (2.10.300)
+  - Orb (2.7.6):
+    - Flutter (= 2.10.300)
 
 DEPENDENCIES:
-  - OrbDebug (= 2.7.5)
+  - Orb (= 2.7.6)
 
 SPEC REPOS:
   https://github.com/meya-customers/orb-cocoapods:
-    - FlutterDebug
-    - OrbDebug
+    - Flutter
+    - Orb
 
 SPEC CHECKSUMS:
-  FlutterDebug: a55e669768588c078112b2245556b6c6a46ce23d
-  OrbDebug: 0681bcc12973e6eaa9b6701e9e17f0e6bd613ccb
+  Flutter: a57d724ebca10e47a7d3321e17e120d433f4fb0b
+  Orb: f894d8561068877535a293e2a9901172fb9fdee8
 
-PODFILE CHECKSUM: 753a5ef1bee1b647f4e25a039d6c76f3782b8068
+PODFILE CHECKSUM: 1bbc91a0d70f7e6bcc9efa880db0e7891b6c4178
 
 COCOAPODS: 1.11.2
