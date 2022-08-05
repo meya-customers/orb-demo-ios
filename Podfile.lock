@@ -1,10 +1,10 @@
 PODS:
   - Flutter (2.10.400)
-  - Orb (2.7.11):
+  - Orb (2.7.12):
     - Flutter (= 2.10.400)
 
 DEPENDENCIES:
-  - Orb (= 2.7.11)
+  - Orb (= 2.7.12)
 
 SPEC REPOS:
   https://github.com/meya-customers/orb-cocoapods:
@@ -13,8 +13,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Flutter: 3bb1651c3e70ab4b1504fbadfde401643206605a
-  Orb: 22896bce82307fed4b9419161bbaa38f0cc26f15
+  Orb: 2728c2584572b16867dcaa2e6f3dc912e161102e
 
-PODFILE CHECKSUM: e872b0e7a588456935998347751cc2d1c9354400
+PODFILE CHECKSUM: 72fe80a288f4e82e02f005f0e016e9499e72dcf3
 
 COCOAPODS: 1.11.2
